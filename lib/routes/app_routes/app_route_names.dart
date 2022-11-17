@@ -40,11 +40,18 @@ const String shippingAddressScreen = "/shippingAddressScreen";
 * Profile Screens.
 */
 const String profileScreen = "/profileScreen";
+const String editProfileScreen = "/editProfileScreen";
+const String walletScreen = "/walletScreen";
+const String fundWalletScreen = "/fundWalletScreen";
+const String activitiesScreen = "/activitiesScreen";
+const String settingsScreen = "/settingsScreen";
 
 /*
 * Others Screens.
 */
-const String questionScreen = "/questionScreen";
+const String helpScreen = "/helpScreen";
+const String talkDealGuideScreen = "/talkDealGuideScreen";
+const String tipsAndTricksScreen = "/tipsAndTricksScreen";
 
 /*
 * Winner screen.

@@ -5,7 +5,7 @@ import 'package:iconsax/iconsax.dart';
 
 import '../routes/app_routes/app_route_names.dart';
 import 'cart/cart_screen.dart';
-import 'others/question_screen.dart';
+import 'help/help_screen.dart';
 import 'profile/profile_screen.dart';
 import './home/home_screen.dart';
 import '../states/dashboard_state_controller.dart';
@@ -20,7 +20,7 @@ class DashboardScreen extends StatelessWidget {
   final List<Widget> dashboardWidgetScreensList = [
     HomeScreen(),
     CartScreen(),
-    QuestionScreen(),
+    HelpScreen(),
     ProfileScreen()
   ];
 

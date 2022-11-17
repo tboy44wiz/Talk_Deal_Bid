@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:talk_deals/screens/help/talk_deal_guide/talk_deal_guide_screen.dart';
+import 'package:talk_deals/screens/help/tips_and_tricks/tips_and_tricks_screen.dart';
 
 import '../../screens/auction/auction_screen.dart';
 import '../../screens/auction/success_auction.dart';
 import '../../screens/dashboard_screen.dart';
 import '../../screens/home/home_screen.dart';
 import '../../screens/home/winners_screen.dart';
-import '../../screens/others/question_screen.dart';
+import '../../screens/help/help_screen.dart';
+import '../../screens/profile/Activities/activities_screen.dart';
+import '../../screens/profile/Edit profile/edit_profile_screen.dart';
+import '../../screens/profile/Settings/settings_screen.dart';
+import '../../screens/profile/Wallet/fund_wallet_screen.dart';
+import '../../screens/profile/Wallet/wallet_screen.dart';
 import '../../screens/profile/profile_screen.dart';
 import 'app_route_names.dart';
 import '../../screens/bidding/bidding_screen.dart';
@@ -120,17 +127,91 @@ List<GetPage<dynamic>> getPages = [
     curve: Curves.easeIn,
   ),
 
+  /*
+  * Edit Profile Screen.
+  */
+  GetPage(
+    name: editProfileScreen,
+    page: () => EditProfileScreen(),
+    transition: Transition.downToUp,
+    transitionDuration: const Duration(milliseconds: 700),
+    curve: Curves.easeIn,
+  ),
+
+  /*
+  * Wallet/Fund Wallet Screen.
+  */
+  GetPage(
+    name: walletScreen,
+    page: () => WalletScreen(),
+    transition: Transition.downToUp,
+    transitionDuration: const Duration(milliseconds: 700),
+    curve: Curves.easeIn,
+  ),
+  GetPage(
+    name: fundWalletScreen,
+    page: () => FundWalletScreen(),
+    transition: Transition.downToUp,
+    transitionDuration: const Duration(milliseconds: 700),
+    curve: Curves.easeIn,
+  ),
+
+  /*
+  * Activities Screen.
+  */
+  GetPage(
+    name: activitiesScreen,
+    page: () => ActivitiesScreen(),
+    transition: Transition.downToUp,
+    transitionDuration: const Duration(milliseconds: 700),
+    curve: Curves.easeIn,
+  ),
+
+  /*
+  * Settings Screen.
+  */
+  GetPage(
+    name: settingsScreen,
+    page: () => SettingsScreen(),
+    transition: Transition.downToUp,
+    transitionDuration: const Duration(milliseconds: 700),
+    curve: Curves.easeIn,
+  ),
+
 
   /*
   * Others Screens.
   */
   GetPage(
-    name: questionScreen,
-    page: () => QuestionScreen(),
+    name: helpScreen,
+    page: () => HelpScreen(),
     transition: Transition.rightToLeft,
     transitionDuration: const Duration(milliseconds: 700),
     curve: Curves.easeIn,
   ),
+
+  /*
+  * Others Screens.
+  */
+  GetPage(
+    name: talkDealGuideScreen,
+    page: () => TalkDealGuideScreen(),
+    transition: Transition.downToUp,
+    transitionDuration: const Duration(milliseconds: 700),
+    curve: Curves.easeIn,
+  ),
+
+  /*
+  * Others Screens.
+  */
+  GetPage(
+    name: tipsAndTricksScreen,
+    page: () => TipsAndTricksScreen(),
+    transition: Transition.downToUp,
+    transitionDuration: const Duration(milliseconds: 700),
+    curve: Curves.easeIn,
+  ),
+
 
 
   /*
