@@ -40,6 +40,7 @@ dependencies:
   form_field_validator: ^1.1.0
   flutter_secure_storage: ^6.0.0
   form_validator: ^1.0.2
+  iconsax: ^0.0.8
 
 dev_dependencies:
   flutter_test:

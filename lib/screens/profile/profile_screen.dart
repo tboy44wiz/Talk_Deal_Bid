@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:iconsax/iconsax.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({Key? key}) : super(key: key);
@@ -11,62 +12,92 @@ class ProfileScreen extends StatelessWidget {
       width: Get.width,
       child: Stack(
         children: [
-          Column(
-            children: [
-              Container(
-                height: 180.0,
-                width: Get.width,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage("assets/images/profile_banner_image.png"),
-                    fit: BoxFit.cover
-                  ),
-                ),
-                child: Center(
-                  child: Text(
-                    "Profile",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 18.0,
-                      fontWeight: FontWeight.w600
-                    ),
-                  ),
-                ),
-              ),
-
-              Expanded(
-                flex: 1,
-                child: Container(
-                  color: Colors.white,
-                ),
-              ),
-
-              Expanded(
-                flex: 1,
-                child: Container(
-                  color: Color(0xFFEEF4F8),
-                ),
-              ),
-            ],
+          Container(
+            height: Get.height,
+            width: Get.width,
+            color: Color(0xffFFE8E1),
           ),
-
           Positioned(
-            top: 130.0,
-            left: 0.0,
-            right: 0.0,
-            /*child: CircleAvatar(
-              backgroundColor: Color(0xFFEEF4F8),
-              backgroundImage: AssetImage("assets/images/profile.png"),
-              radius: 50.0,
-            ),*/
+              left: 0,
+              right: 0,
+              top: 100,
+              child: Container(
+                height: 200,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    CircleAvatar(
+                      radius: 50,
+                      backgroundImage: AssetImage("assets/images/profile.png"),
+                    ),
+                    Text(
+                      "Osundo Tochukwu",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+              )
+          ),
+          Positioned(
+            bottom: 0,
             child: Container(
-              height: 50.0,
-              width: 50.0,
+              height: 450,
+              width: Get.width,
+              padding: EdgeInsets.symmetric(horizontal: 20),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(25.0),
-                image: DecorationImage(
-                  image: AssetImage("assets/images/profile.png"),
-                )
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(40),
+                    topRight: Radius.circular(40),
+                  )
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ListTile(
+                    leading: Icon(Iconsax.edit, color: Color(0xffFF5C2A),),
+                    title: Text(
+                      "Edit profile",
+                      style: TextStyle(
+                        fontSize: 15,
+                      ),
+                    ),
+                    trailing: Icon(Icons.arrow_forward_ios_rounded),
+                  ),
+                  ListTile(
+                    leading: Icon(Iconsax.wallet, color: Color(0xffFF5C2A),),
+                    title: Text(
+                      "Fund wallet",
+                      style: TextStyle(
+                        fontSize: 15,
+                      ),
+                    ),
+                    trailing: Icon(Icons.arrow_forward_ios_rounded),
+                  ),
+                  ListTile(
+                    leading: Icon(Iconsax.activity, color: Color(0xffFF5C2A)),
+                    title: Text(
+                      "Activities",
+                      style: TextStyle(
+                        fontSize: 15,
+                      ),
+                    ),
+                    trailing: Icon(Icons.arrow_forward_ios_rounded),
+                  ),
+                  ListTile(
+                    leading: Icon(Iconsax.logout, color: Color(0xffFF5C2A)),
+                    title: Text(
+                      "Logout",
+                      style: TextStyle(
+                        fontSize: 15,
+                      ),
+                    ),
+                    trailing: Icon(Icons.arrow_forward_ios_rounded),
+                  ),
+                ],
               ),
             ),
           )

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:talk_deals/routes/app_routes/app_route_names.dart';
 import 'package:talk_deals/states/bidding_state_controller.dart';
 import 'package:talk_deals/widgets/data_table_widget.dart';
 import 'package:talk_deals/widgets/place_bid_bottom_sheet_widget.dart';

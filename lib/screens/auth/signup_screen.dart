@@ -16,7 +16,8 @@ class SignUpScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: DoubleBackToCloseApp(
-        snackBar: _appSnackBar.snackBar('Tap back again to exit the app.', 'Info'),
+        snackBar:
+            _appSnackBar.snackBar('Tap back again to exit the app.', 'Info'),
         child: Container(
           child: Column(
             children: [
@@ -49,7 +50,6 @@ class SignUpScreen extends StatelessWidget {
                   ),
                 ),
               ),
-
               Expanded(
                 flex: 9,
                 child: SingleChildScrollView(
@@ -86,7 +86,10 @@ class SignUpScreen extends StatelessWidget {
                                 onChanged: (value) {},
                                 // autofocus: true,
                                 keyboardType: TextInputType.name,
-                                validator: ValidationBuilder().required().minLength(3).build(),
+                                validator: ValidationBuilder()
+                                    .required()
+                                    .minLength(3)
+                                    .build(),
                                 decoration: InputDecoration(
                                   labelText: "Username",
                                   labelStyle: TextStyle(
@@ -98,8 +101,8 @@ class SignUpScreen extends StatelessWidget {
                                   ),
                                   focusedBorder: UnderlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: Color(0xFFFF5C2A),
-                                        width: 2.0,
+                                      color: Color(0xFFFF5C2A),
+                                      width: 2.0,
                                     ),
                                   ),
                                   // focusColor: Color(0xFFFF5C2A),
@@ -107,12 +110,15 @@ class SignUpScreen extends StatelessWidget {
                                 ),
                               ),
                               SizedBox(height: 10.0),
-
                               TextFormField(
                                 onChanged: (value) {},
                                 // autofocus: true,
                                 keyboardType: TextInputType.emailAddress,
-                                validator: ValidationBuilder().required().email().minLength(3).build(),
+                                validator: ValidationBuilder()
+                                    .required()
+                                    .email()
+                                    .minLength(3)
+                                    .build(),
                                 decoration: InputDecoration(
                                   labelText: "Email",
                                   labelStyle: TextStyle(
@@ -124,8 +130,8 @@ class SignUpScreen extends StatelessWidget {
                                   ),
                                   focusedBorder: UnderlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: Color(0xFFFF5C2A),
-                                        width: 2.0,
+                                      color: Color(0xFFFF5C2A),
+                                      width: 2.0,
                                     ),
                                   ),
                                   // focusColor: Color(0xFFFF5C2A),
@@ -133,7 +139,6 @@ class SignUpScreen extends StatelessWidget {
                                 ),
                               ),
                               SizedBox(height: 10.0),
-
                               TextFormField(
                                 onChanged: (value) {},
                                 validator: ValidationBuilder().build(),
@@ -157,7 +162,6 @@ class SignUpScreen extends StatelessWidget {
                                 ),
                               ),
                               SizedBox(height: 10.0),
-
                               TextFormField(
                                 onChanged: (value) {},
                                 validator: ValidationBuilder().build(),
@@ -181,19 +185,16 @@ class SignUpScreen extends StatelessWidget {
                                 ),
                               ),
                               SizedBox(height: 28.0),
-
                               TextButton(
                                 onPressed: () {},
                                 style: TextButton.styleFrom(
-                                  backgroundColor: Colors.black,
-                                  minimumSize: Size(Get.width, 0.0),
-                                  padding: EdgeInsets.symmetric(horizontal: 0.0, vertical: 15.0)
-                                ),
+                                    backgroundColor: Colors.black,
+                                    minimumSize: Size(Get.width, 0.0),
+                                    padding: EdgeInsets.symmetric(
+                                        horizontal: 0.0, vertical: 15.0)),
                                 child: Text(
                                   "Sign up",
-                                  style: TextStyle(
-                                    color: Colors.white
-                                  ),
+                                  style: TextStyle(color: Colors.white),
                                 ),
                               ),
                               SizedBox(height: 25.0),
@@ -211,21 +212,18 @@ class SignUpScreen extends StatelessWidget {
                               ),
                             ),
                             SizedBox(width: 7.0),
-
                             Image.asset(
                               "assets/images/google_logo.png",
                               height: 12.0,
                               width: 12.0,
                             ),
                             SizedBox(width: 15.0),
-
                             Image.asset(
                               "assets/images/facebook_logo.png",
                               height: 12.0,
                               width: 12.0,
                             ),
                             SizedBox(width: 15.0),
-
                             Image.asset(
                               "assets/images/apple_logo.png",
                               height: 12.0,
@@ -256,8 +254,7 @@ class SignUpScreen extends StatelessWidget {
                                 style: TextStyle(
                                     color: Color(0xFFFF5C2A),
                                     fontSize: 11,
-                                    fontWeight: FontWeight.w700
-                                ),
+                                    fontWeight: FontWeight.w700),
                               ),
                             ),
                           ],

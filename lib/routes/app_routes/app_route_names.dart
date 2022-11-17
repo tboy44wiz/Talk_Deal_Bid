@@ -20,6 +20,12 @@ const String dashboardScreen = "/dashboardScreen";
 const String homeScreen = "/homeScreen";
 
 /*
+* Auction Screens.
+*/
+const String editAuction = "/editAuctions";
+const String successAuction = "/successAuction";
+
+/*
 * Bidding Screens.
 */
 const String biddingScreen = "/biddingScreen";
@@ -39,3 +45,8 @@ const String profileScreen = "/profileScreen";
 * Others Screens.
 */
 const String questionScreen = "/questionScreen";
+
+/*
+* Winner screen.
+*/
+const String winnerScreen = "/winnerScreen";
